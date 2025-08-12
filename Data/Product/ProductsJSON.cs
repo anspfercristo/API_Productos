@@ -23,7 +23,6 @@ namespace Data.Product
                 if (!File.Exists(path))
                 {
                     _logger.LogWarning("El archivo Product.json no existe en la ruta: {Path}", path);
-                    return products;
                 }
 
                 string data = @"[
