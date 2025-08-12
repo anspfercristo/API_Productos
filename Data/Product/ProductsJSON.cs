@@ -11,6 +11,10 @@ namespace Data.Product
         {
             _logger = logger;
         }
+        /// <summary>
+        /// Metodo dedicado a transformar un archivo JSON en una lista de entidades tipo Producto
+        /// </summary>
+        /// <returns>Genera una lista con los productos existentes en el archivo JSON</returns>
 
         public List<Products> GetProductsData()
         {

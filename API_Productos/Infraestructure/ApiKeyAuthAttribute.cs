@@ -6,7 +6,7 @@ namespace API_Productos.Infraestructure
     /// <summary>
     /// Filtro de accion para segurizar EPs
     /// La clave que entre por X-API-KEY debe coincidir con la Key configurada
-    /// Se activa con [ApiKeyAuth] decorando el EP segurizado
+    /// Se activa con [ApiKeyAuth] decorando el EP segurizado (Ver en Controller)
     /// </summary>
     public class ApiKeyAuthAttribute : Attribute, IAsyncActionFilter
     {
