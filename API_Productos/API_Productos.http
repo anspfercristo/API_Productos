@@ -1,0 +1,6 @@
+@CristoferSpan_APO_Productos_HostAddress = http://localhost:5263
+
+GET {{CristoferSpan_APO_Productos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
