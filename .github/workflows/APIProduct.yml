@@ -50,8 +50,8 @@ jobs:
           # Esperar a que la API esté disponible
           Start-Sleep -Seconds 5
           
-          # Descargar swagger.json (puerto y protocolo según tu Program.cs)
-          Invoke-WebRequest -Uri "https://apiproduct-d3adhmbke0hza5gp.chilecentral-01.azurewebsites.net/swagger" -OutFile "${{ env.API_IMPORT_SPECIFICATION_PATH }}"
+          # Descargar swagger.json
+          Invoke-WebRequest -Uri "https://apiproduct-d3adhmbke0hza5gp.chilecentral-01.azurewebsites.net/swagger/v1/swagger.json" -OutFile "${{ env.API_IMPORT_SPECIFICATION_PATH }}"
           
           # Detener la API
           Stop-Process -Id $apiProcess.Id
