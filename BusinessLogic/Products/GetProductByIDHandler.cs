@@ -13,7 +13,7 @@ namespace BusinessLogic.Products
             _logger = logger;
         }
 
-        public override Task<GetProductByIDResponse> Handle(GetProductByIDRequest request)
+        public override async Task<GetProductByIDResponse> Handle(GetProductByIDRequest request)
         {
             var response = new GetProductByIDResponse()
             {
@@ -33,7 +33,7 @@ namespace BusinessLogic.Products
                 _logger.LogError(e.Message);
             }
 
-            return Task.FromResult(response);
+            return response;
         }
     }
 }

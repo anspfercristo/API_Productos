@@ -14,7 +14,7 @@
 
         internal TResponse Execute(TRequest request)
         {
-            TResponse? response = default(TResponse);
+            TResponse response = default(TResponse);
             try
             {
                 response = Handle(request);
