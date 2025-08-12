@@ -20,4 +20,10 @@
     <ProjectReference Include="..\Contract\Contract.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="Data\Product\Product.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
